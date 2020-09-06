@@ -2,14 +2,9 @@
 getwd()
 
 #pacotes exigidos para o exercicio#
-
-library(ggplot2)
-library(dplyr)
-library(statsr)
-library(BAS)
-library(grid)
-library(gridExtra)
-
+pacotes <- c("ggplot2","dplyr","statsr","BAS","grid","gridExtra")
+lapply(pacotes,library,characters.only = T)
+rm(pacotes)
 
 #setar seed para replicar#
 
